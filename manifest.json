@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "MySilentSurfer",
+  "version": "1.0",
+  "description": "Presents page content in an immersive reading format and removes ads.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
